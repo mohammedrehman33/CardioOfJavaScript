@@ -1,0 +1,15 @@
+Object.defineProperty(Array.prototype, 'chunk_inefficient', {
+  value: function(chunkSize) {
+    var array = this;
+    return [].concat.apply([],
+      array.map(function(elem, i) {
+        return i % chunkSize ? [] : [array.slice(i, i + chunkSize)];
+      })
+    );
+  }
+});
+
+console.log(
+  [1, 2, 3, 4, 5, 6, 7].chunk_inefficient(3)
+)
+// [[1, 2, 3], [4, 5, 6], [7]]
