@@ -1,0 +1,14 @@
+function applySentenceCase(str) {
+    var txt = str.split(/(.+?[\.\?\!](\s|$))/g);
+    for (i = 0; i < (txt.length-1); i++) {
+        if (txt[i].length>1){
+            txt[i]=txt[i].charAt(0).toUpperCase() + txt[i].substr(1).toLowerCase();
+        } else if (txt[i].length==1) {
+            txt[i]=txt[i].charAt(0).toUpperCase();
+        }
+    }
+    txt = txt.join('').replace(/\s\s/g,' ');
+    return txt;
+}
+
+alert(applySentenceCase("LOREM IoSUM DOLOR SIT AMET, CONSECTETUR T."));
