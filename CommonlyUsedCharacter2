@@ -1,0 +1,23 @@
+function highest (string) {
+  let array = Array.from(string);
+  let frequencyMap = {};
+  array.forEach((value, index) => {
+    if (!frequencyMap[value]) {
+      frequencyMap[value] = 0;
+    }
+    frequencyMap[value] += 1;
+  })
+  let frequencyArray = Object.entries(frequencyMap);
+  frequencyArray.sort((a, b) => {
+    if (a[1] < b[1]) {
+      return 1;
+      }
+    if (a[1] > b[1]) {
+      return -1;
+      }
+      return 0;
+    });
+  return(frequencyArray[0][0]);
+}
+
+console.log(highest("hello World"));
