@@ -1,6 +1,6 @@
 # CardioOfJavaScript
-This repositry consists of six important exersices of java script
-In this i did 6 challenges...
+This repositry consists of Eleven important exersices of java script
+In this i did 11 challenges...
 
 1. String Reversal
 2. Validate Palindromes
@@ -8,3 +8,10 @@ In this i did 6 challenges...
 4. Capitalize Letters
 5. Find The Max Character
 6. FizzBuzz Challenge
+
+7. Longest Word
+8. Array Chunking
+9. Flatten Array
+10. Anagrams
+11. Letter Changes
+
