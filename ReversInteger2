@@ -1,0 +1,14 @@
+var text = ""
+var i = 0
+var array = ["1", "4", "3"]
+var number = array.length
+var arrayFinal = []
+
+for (i = 0; i < array.length; i++) {
+    text = array[number - 1]
+    arrayFinal.push(text)
+    text = ""
+    number = number - 1
+}
+
+console.log(arrayFinal)
